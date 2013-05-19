@@ -1,0 +1,16 @@
+---
+- name: Ensure apache is installed at the latest version
+  apt: pkg=apache2 state=latest
+- name: Write the template website file
+  template: src=template-website dest=/etc/apache2/sites-available/template-website
+- name: Disable default site
+  command: a2dissite default
+  sudo: yes
+  notify:
+    - restart apache
+- name: Enable template website
+  command: a2ensite template-website
+  sudo: yes
+  notify:
+    - restart apache
+

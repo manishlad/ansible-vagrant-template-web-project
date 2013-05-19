@@ -1,0 +1,9 @@
+---
+- name: Ensure unzip is installed
+  apt: pkg=unzip state=latest
+#- name: Download the latest twitter-bootstrap
+#  file: src=http://twitter.github.com/bootstrap/assets/bootstrap.zip dest=/tmp/bootstrap.zip
+- name: Download the latest twitter-bootstrap
+  get_url: url=http://twitter.github.com/bootstrap/assets/bootstrap.zip dest=/tmp/bootstrap.zip force=yes
+- name: Extract twitter-bootstrap
+  command: unzip -o /tmp/bootstrap.zip -d /vagrant/stylesheets/
