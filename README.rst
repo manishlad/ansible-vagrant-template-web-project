@@ -20,7 +20,8 @@ Getting Started
 #. Install Vagrant
 #. cd dev-env
 #. vagrant up
-   Note: Default vagrant user password is blank (when prompted for sudo access
+
+   Note: Default vagrant user password is blank (when prompted for sudo access)
 
 .. _`Vagrant`: http://www.vagrantup.com/
 .. _`Ansible`: http://ansible.cc/
