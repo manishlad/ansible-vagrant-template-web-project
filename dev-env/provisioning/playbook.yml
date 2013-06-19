@@ -1,8 +1,12 @@
 ---
 - hosts: vagrant
-  tasks:
-    - include: template-website.yml
-    - include: web-utils.yml
-    - include: vim.yml
-  handlers:
-    - include: handlers.yml
+  roles:
+    - utils
+    - web-utils
+
+#  tasks:
+#    - include: template-website.yml
+#    - include: web-utils.yml
+#    - include: vim.yml
+#  handlers:
+#    - include: handlers.yml

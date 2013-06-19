@@ -1,0 +1,6 @@
+---
+- include: vim.yml
+
+- name: Ensure unzip is installed
+  apt: pkg=unzip state=latest
+
