@@ -1,5 +1,5 @@
 ---
-- hosts: vagrant
+- hosts: all
   roles:
     - utils
     - web-utils
