@@ -1,6 +1,7 @@
 ---
 - name: Ensure apache is installed at the latest version
   apt: pkg=apache2 state=latest
+  sudo: yes
 - name: Write the template website file
   template: src=template-website dest=/etc/apache2/sites-available/template-website.conf
   sudo: yes

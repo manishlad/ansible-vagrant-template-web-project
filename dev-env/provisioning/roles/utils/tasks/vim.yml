@@ -1,6 +1,7 @@
 ---
 - name: Ensure Vim is installed
   apt: pkg=vim state=latest
+  sudo: yes
 - name: Initialise .vimrc file
   template: src=template-vimrc dest=/home/vagrant/.vimrc
 
