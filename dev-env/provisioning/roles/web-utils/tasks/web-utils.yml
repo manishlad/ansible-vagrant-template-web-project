@@ -2,6 +2,6 @@
 #- name: Download the latest twitter-bootstrap
 #  file: src=http://twitter.github.com/bootstrap/assets/bootstrap.zip dest=/tmp/bootstrap.zip
 - name: Download the latest twitter-bootstrap
-  get_url: url=https://github.com/twbs/bootstrap/releases/download/v3.2.0/bootstrap-3.2.0-dist.zip dest=/tmp/bootstrap.zip force=yes
+  get_url: url=https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip dest=/tmp/bootstrap.zip force=yes
 - name: Extract twitter-bootstrap
   command: unzip -o /tmp/bootstrap.zip -d /vagrant/stylesheets/
